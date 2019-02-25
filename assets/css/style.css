@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%
+  }
+/*HEADER*/
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    height: 100px;
+    background-color: white;
+    border-bottom: grey solid 2px;
+}
+.title {
+    grid-column: 2;
+    background-color: turquoise;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.links {
+    grid-column: 4;
+    padding-top: 2em;
+}
+li {
+    display: inline;
+    padding-left: 20px; 
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+li:not(:last-child) { 
+  border-right:solid 1px;
+  color: lightgrey;
+  padding-right: 20px;
+}
+a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+}
+a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: grey;
+}
+
+/*BODY*/
+.body {
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
+  background-image: url("../images/background.jpg");
+  height: 730px;
+}
+.box {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  background-color: white;
+  border: #b7b7b8 solid 2px;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+.boxtitle {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-bottom: 3px solid #b7b7b8;
+  margin: 0px 25px 0px 25px;
+}
+.boxheader {
+  grid-column: 1 / span 1;
+  padding-top: 1em;
+  font-size: 35px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: turquoise; 
+}
+.portrait {
+  grid-row: 2 / span 1;
+  grid-column: 1;
+  height: 200px;
+  float: left;
+  margin: 30px 25px 25px 25px;
+}
+.bodytext {
+  grid-row: 2 / span 1;
+  grid-column: 1;
+  line-height: 30px;
+  font-size: 18px;
+  margin: 25px 25px 25px 25px;
+}
+/*FOOTER*/
+.footer {
+  display: grid;
+  height: 90px;
+  background-color: grey;
+  border-top: 10px solid turquoise;
+}
+.copyright {
+  width: 100%;
+  color: #fff;
+  line-height: 40px;
+  font-size: 1em;
+  text-align: center;
+}
+
+/*Contact*/
+.contactbody {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 5fr;
+  padding: 0px 30px 0px 30px;
+}
+.label {
+  padding-top: 20px;
+}
+.button {
+  height: 30px;
+  width: 100px; 
+  margin: 20px 0px 20px 0px;
+  background-color: turquoise;
+  color: white;
+}
+/*Portfolio*/
+.photo {
+  height:200px;
+  float: left;
+  margin-right: 100px;
+  margin: 20px;
+}
